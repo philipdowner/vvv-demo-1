@@ -15,12 +15,12 @@ then
 	mkdir public_html
 	cd public_html
 	wp core download
-	wp core config --dbname="{{dnName}}" --dbuser=wp --dbpass=wp --dbhost="localhost"
+	wp core config --dbname="{{dbName}}" --dbuser=wp --dbpass=wp --dbhost="localhost"
 	wp core install --url={{siteDomain}} --title="{{siteName}}" --admin_user=admin --admin_password=password --admin_email={{wpAdminEmail}}
 	cd ..
 fi
 
 # The Vagrant site setup script will restart Nginx for us
-echo "=======================";
-echo "Congrats! {{siteDomain}} site now installed";
-echo "=======================";
+echo "====================================="
+echo "Congrats! {{siteDomain}} site now installed"
+echo "====================================="
