@@ -1,6 +1,7 @@
 # Init script for AppPresser Demo
-
-echo "Commencing {{siteName}}"
+echo "====================================="
+echo "Commencing {{siteName}} installation"
+echo "====================================="
 
 # Make a database, if we don't already have one
 echo "Creating database {{dbName}} (if it's not already there)"
@@ -20,7 +21,6 @@ then
 fi
 
 # The Vagrant site setup script will restart Nginx for us
-
 echo "=======================";
-echo "Congrats! {{wpAdminEmail}} site now installed";
+echo "Congrats! {{siteDomain}} site now installed";
 echo "=======================";
